@@ -1,0 +1,25 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-vue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&serverTimezone=GMT%2b8
+    username: Bruce
+    password: 123456
+#    日期格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+# 支付宝的配置
+# appId
+alipay.appId: 
+# 应用私钥
+alipay.appPrivateKey: 
+# 支付宝公钥
+alipay.alipayPublicKey: 
+# 支付成功回调地址
+alipay.notifyUrl:
+
+# 卖家账号
